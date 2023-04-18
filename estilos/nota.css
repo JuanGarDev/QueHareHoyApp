@@ -1,0 +1,26 @@
+#notas .contenedor{
+    margin: 40px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.filas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nota{
+    background-color: #CBF3F0;
+    margin: 0 10px;
+    padding: 30px 15px;
+    width: 40vw;
+    border: 1px solid transparent;
+    border-radius: 1.25em;
+}
+
+.seleccionada{
+    border-color: rgb(139, 139, 139)
+}

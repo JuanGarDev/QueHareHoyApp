@@ -1,0 +1,78 @@
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont-activo{
+    animation: barra-acc .5s forwards;
+}
+
+@keyframes barra-acc{
+    0%{
+        border-top-right-radius: 0em;
+        border-top-left-radius: 0em;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        border-top-left-radius: 1.25em;
+        border-top-right-radius: 1.25em;
+        background-color: #2EC4B6;
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, .3);
+    }
+}
+
+.cont-inactivo{
+    animation: barra-acc-no .5s forwards;
+}
+
+@keyframes barra-acc-no{
+    0%{
+        opacity: 1;
+        border-top-left-radius: 1.25em;
+        border-top-right-radius: 1.25em;
+        background-color: #2EC4B6;
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, .3);
+    }
+    100%{
+        border-top-right-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+}
+
+.caja{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.acc-oculto{
+    display: none;
+}
+
+.agregar{
+    background-color: #2EC4B6;
+    border-radius: 1.25em;
+}
+
+#agregarNota{
+    color: #FFFFFF;
+    font-size: 2em;
+    margin: 10px ;
+}
+
+
+#acciones i{
+    margin: 0 30px;
+    color: white;
+    font-size: 1.5em;
+}
